@@ -1,0 +1,159 @@
+:root {
+    margin: 0;
+    --backGround:whitesmoke;
+    --content:white;
+    --border:silver;
+}
+*{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    background-color: var(--backGround);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1,
+h2,
+h3,
+h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+menu{
+    display: flex;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    background-color: orange;
+    border-top: black solid;
+}
+nav{
+    padding: 0 0.5rem;
+    cursor: pointer;
+    color: var(--content);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: var(--border) solid 0.01rem;
+    border-radius: 0.2rem;
+    background-color: black;
+    box-shadow: 0 0.1rem 0.3rem black;
+}
+nav:hover{
+    box-shadow: 0 0.1rem 0.1rem black;;
+}
+i{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+dd{
+    background-color: var(--content);
+    padding:0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.1rem 0.1rem black;
+    min-width: 25%;
+}
+dt{
+    background-color: black;
+    color: var(--content);
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+dl{
+    line-height: 1rem;
+}
+/* FORMS */
+form{
+    width: 50vw;
+    margin: 5% auto;
+    max-width: 20%;
+    min-width: 20rem;
+    background-color: whitesmoke;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem black;
+}
+input{
+    width: 94.5%;
+    padding: 1rem 0.7rem 0.7rem 0.7rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    margin: 0.5rem auto;
+}
+input:focus{
+    box-shadow: 0 0.1em 0.3em;
+    transition: 250ms;
+}
+input::placeholder{
+    color: silver;
+}
+input:focus::placeholder{
+    transform: scale(0.5);
+    transition: transform 350ms;
+    position: relative;
+    left: -25%;
+    top: -1.2rem;
+}
+#cor{
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 0;
+}
+#bar_button{
+    display: flex;
+    flex-direction: row;
+}
+#btn{
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+#cor:hover, #cor:focus{
+    background-color: darkgrey;
+}
+#cor:active{
+    border:none;
+    background-color: darkgrey;
+    outline-offset: none;
+}
+#btn:hover, #cor:hover {
+    box-shadow: 0 0.1em 0.3em rgb(15, 10, 10);
+    transition: 150ms;
+}
+.formNew{
+    background-color:powderblue ;
+}
+.formNew:hover{
+    background-color: deepskyblue;
+}
+.confirm{
+    width: 60%;
+    background-color: yellowgreen;
+}
+.confirm:hover{
+    background-color: green;
+}
+.cancel{
+    width: 40%;
+    background-color:tomato;
+}
+.cancel:hover{
+    background-color: red;
+}
